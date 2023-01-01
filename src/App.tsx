@@ -60,6 +60,9 @@ function App() {
           NIH
         </a>
       </p>
+      <p>
+        <a href="https://github.com/hypothete/e2-patch-simulator" target="_blank" rel="noreferrer">Code available on GitHub</a>
+      </p>
     </div>
   );
 }
