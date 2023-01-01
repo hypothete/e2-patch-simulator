@@ -43,7 +43,7 @@ function App() {
         </div>
       </div>
       <p>
-        Data for concentration curve is a weighted average made from these
+        Data for concentration curve is a weighted average of abdominal patch measurements taken from these
         sources:{" "}
         <a
           href="https://fda.report/DailyMed/e7e6da3b-8485-1382-61c9-e9b369018b98"
@@ -57,7 +57,7 @@ function App() {
           target="_blank"
           rel="noreferrer"
         >
-          NLH
+          NIH
         </a>
       </p>
     </div>

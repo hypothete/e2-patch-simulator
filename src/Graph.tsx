@@ -62,7 +62,7 @@ function Graph({ patches, spread, period, worn }: GraphProps) {
           <Tooltip />
           <CartesianGrid stroke="#666666" strokeWidth={1} />
           <Line yAxisId="valueAxis" type="monotone" dot={false} dataKey="value" stroke="#F5A9B8" strokeWidth={2} isAnimationActive={false} />
-          <Line yAxisId="patchAxis" type="monotone" dot={false} dataKey="patches" stroke="#5BCEFA" strokeWidth={2} isAnimationActive={false} />
+          <Line yAxisId="patchAxis" type="monotone" dot={false} dataKey="patches" stroke="#5BCEFA" strokeWidth={2} opacity={0.25} isAnimationActive={false} />
         </LineChart>
       </ResponsiveContainer>
     </div>
