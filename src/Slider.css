@@ -1,0 +1,16 @@
+.Slider {
+  margin-bottom: 1rem;
+}
+
+.SliderLabel {
+  display: inline-block;
+  width: 14rem;
+  text-align: left;
+}
+
+.SliderValue {
+  display: inline-block;
+  width: 3rem;
+  text-align: center;
+  font-weight: bolder;
+}

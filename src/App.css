@@ -3,7 +3,24 @@
   padding: 4rem;
 }
 
-.AppControl {
-  margin: 1rem;
+.AppSideBySide {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
 }
 
+.AppControls {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.AppControls p {
+  margin: 0 0 1rem 0;
+  font-weight: bolder;
+}
