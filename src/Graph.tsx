@@ -36,21 +36,21 @@ function Graph({ patches, spread, period, worn }: GraphProps) {
           <YAxis
             dataKey="value"
             yAxisId="valueAxis"
-            width={50}
+            width={80}
             label={{
               value: "E2 concentration (pg/mL)",
               angle: -90,
-              position: "insideLeft",
+              position: "inside",
             }}
           />
           <YAxis
             dataKey="patches"
             yAxisId="patchAxis"
-            width={70}
+            width={80}
             label={{
               value: "# of patches",
-              angle: -90,
-              position: "insideRight",
+              angle: 90,
+              position: "inside",
             }}
             orientation="right"
           />
