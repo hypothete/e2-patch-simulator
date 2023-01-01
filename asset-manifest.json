@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/e2-patch-simulator/static/css/main.1ef1e67c.css",
-    "main.js": "/e2-patch-simulator/static/js/main.d8a5da72.js",
+    "main.js": "/e2-patch-simulator/static/js/main.a0e595d9.js",
     "index.html": "/e2-patch-simulator/index.html",
     "main.1ef1e67c.css.map": "/e2-patch-simulator/static/css/main.1ef1e67c.css.map",
-    "main.d8a5da72.js.map": "/e2-patch-simulator/static/js/main.d8a5da72.js.map"
+    "main.a0e595d9.js.map": "/e2-patch-simulator/static/js/main.a0e595d9.js.map"
   },
   "entrypoints": [
     "static/css/main.1ef1e67c.css",
-    "static/js/main.d8a5da72.js"
+    "static/js/main.a0e595d9.js"
   ]
 }
