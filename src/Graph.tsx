@@ -80,14 +80,20 @@ function generateSeries(patches: number, spread: number, period: number, worn: n
 
     newValues = newValues.map((item, index) => {
       let rawValueIndex = index - spreadOffset;
+      let rawValueAtTime = 0;
+      let patchApplied = false;
       if (rawValueIndex > worn) {
-        rawValueIndex = -1;
+        const dropoffDist = rawValueIndex - worn;
+        patchApplied = false;
+        rawValueAtTime = rawValues[rawValues.length - 1] / (dropoffDist);
+      } else {
+        rawValueAtTime = rawValues[rawValueIndex];
+        patchApplied = rawValueAtTime > 0;
       }
-      const rawValueAtTime = rawValues[rawValueIndex] || 0;
       return {
         time: index,
         value: item.value + patches * (rawValueAtTime || 0),
-        patches: item.patches + patches * (rawValueAtTime > 0 ? 1 : 0)
+        patches: item.patches + patches * (patchApplied ? 1 : 0)
       };
     });
   }
