@@ -20,11 +20,6 @@
   align-items: flex-start;
 }
 
-.AppControls p {
-  margin: 0 0 1rem 0;
-  font-weight: bolder;
-}
-
 .AppShare {
   min-width: 10rem;
   font-weight: bolder;

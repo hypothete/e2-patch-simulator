@@ -66,7 +66,6 @@ function App() {
             value={worn}
             setValue={setWorn}
           />
-          <p>Patches used per month: {patches * Math.ceil(period / spread)}</p>
           <button className="AppShare" onClick={copyShareLink}>
             {shareState ? 'Copied!' : 'Copy Share Link'}
           </button>
