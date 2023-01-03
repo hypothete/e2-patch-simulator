@@ -1,23 +1,23 @@
 .App {
   text-align: center;
-  padding: 4rem;
+  padding: 1rem;
 }
 
 .AppSideBySide {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0 auto;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .AppControls {
-  min-width: 400px;
+  max-width: 410px;
   display: flex;
   flex-direction: column;
-  margin-left: 2rem;
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 1rem;
 }
 
 .AppShare {
@@ -25,4 +25,22 @@
   font-weight: bolder;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .App {
+    padding: 4rem;
+  }
+
+  .AppSideBySide {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .AppControls {
+    padding: 0;
+    margin-left: 2rem;
+  }
 }

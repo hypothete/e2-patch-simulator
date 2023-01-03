@@ -31,7 +31,7 @@ function Graph({ patches, spread, period, worn }: GraphProps) {
       <ResponsiveContainer>
         <LineChart
           data={newSeries}
-          margin={{ top: 10, right: 10, left: 10, bottom: 10 }}
+          margin={{ top: 10, right: 0, left: 0, bottom: 10 }}
         >
           <YAxis
             dataKey="value"
@@ -57,7 +57,7 @@ function Graph({ patches, spread, period, worn }: GraphProps) {
           <XAxis
             dataKey="time"
             height={40}
-            label={{ value: "Time (hours)", position: "insideBottom" }}
+            label={{ value: "Time (hours)", position: "insideBottom", }}
           />
           <Tooltip />
           <CartesianGrid stroke="#666666" strokeWidth={1} />

@@ -1,4 +1,12 @@
 .Graph {
-  width: 600px;
+  width: 100vmin;
   height: 400px;
+}
+
+@media screen and (min-width: 1024px) {
+  .Graph {
+    width: 80vmin;
+    height: 400px;
+  }
+  
 }
