@@ -8,6 +8,7 @@ function App() {
   const [spread, setSpread] = useState(168);
   const [worn, setWorn] = useState(168);
   const [shareState, setShareState] = useState(false);
+  const [showPatches, setShowPatches] = useState(false);
   const period = 672; // month in hours
 
   useEffect(() => {
@@ -39,7 +40,13 @@ function App() {
     <div className="App">
       <h1>0.1mg Estradiol Patch Simulator</h1>
       <div className="AppSideBySide">
-        <Graph patches={patches} spread={spread} period={period} worn={worn} />
+        <Graph
+          patches={patches}
+          spread={spread}
+          period={period}
+          worn={worn}
+          showPatches={showPatches}
+        />
         <div className="AppControls">
           <h2>Controls</h2>
           <Slider
@@ -66,8 +73,13 @@ function App() {
             value={worn}
             setValue={setWorn}
           />
+          <button
+            className="AppSwitchGraph"
+            onClick={() => setShowPatches(!showPatches)}
+          >{`Show ${showPatches ? "E2 levels" : "Patches"}`}</button>
+          <hr className="AppCtrlsDivider" />
           <button className="AppShare" onClick={copyShareLink}>
-            {shareState ? 'Copied!' : 'Copy Share Link'}
+            {shareState ? "Copied!" : "Copy Share Link"}
           </button>
         </div>
       </div>
